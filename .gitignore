@@ -43,5 +43,9 @@ yarn-error.log*
 .env.test.local
 .env.production.local
 
-# Contentlayer
-.contentlayer
+# Contentlayer (track only package.json + generated .d.ts types)
+.contentlayer/*
+!.contentlayer/package.json
+!.contentlayer/generated
+.contentlayer/generated/*
+!.contentlayer/generated/**/*.d.ts
