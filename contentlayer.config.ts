@@ -14,6 +14,8 @@ import {
   remarkImgToJsx,
   extractTocHeadings,
 } from 'pliny/mdx-plugins/index.js'
+import remarkDirective from 'remark-directive'
+import { remarkNotebookDirective } from 'notebook-mdx/server'
 // Rehype packages
 import rehypeSlug from 'rehype-slug'
 import rehypeAutolinkHeadings from 'rehype-autolink-headings'
@@ -159,6 +161,8 @@ export default makeSource({
       remarkMath,
       remarkImgToJsx,
       remarkAlert,
+      remarkDirective,
+      remarkNotebookDirective,
     ],
     rehypePlugins: [
       rehypeSlug,
