@@ -3,6 +3,7 @@ const siteMetadata = {
   title: 'Blog',
   author: 'Sungwoo Kang',
   headerTitle: 'Sungwoo Kang',
+  headerTitleMinified: 'Sungwoo K.',
   description: '',
   language: 'ko-kr',
   theme: 'system', // system, dark or light
